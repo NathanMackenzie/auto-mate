@@ -4,7 +4,7 @@ require 'birthday_wisher.rb'
 scheduler = Rufus::Scheduler.new
 
 scheduler.every '30s' do
-  run
+  #run
 end
 
 scheduler.join
