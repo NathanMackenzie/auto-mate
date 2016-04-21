@@ -3,8 +3,10 @@ require 'birthday_wisher.rb'
 
 scheduler = Rufus::Scheduler.new
 
-scheduler.every '30s' do
-  #run
+scheduler.cron '5 0 * * *' do
+  Facebook.all.each do |account|
+    run account.email, account.password
+  end
 end
 
 scheduler.join
