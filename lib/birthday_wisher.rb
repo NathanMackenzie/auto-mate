@@ -5,7 +5,7 @@ BASE_URL = "http://facebook.com"
 
 def run(email, password)
   login(email, password)
-  #wish_happy_birthdays get_birthdays
+  wish_happy_birthdays get_birthdays
   close
 end
 
