@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '4.2.2'
-gem 'rufus-scheduler', '3.2.0'
+#gem 'rufus-scheduler', '3.2.0'
 gem 'bcrypt',       '3.1.7'
 gem 'watir-webdriver', '0.9.1'
 gem 'phantom-ruby-browser', '~> 0.1.0'
@@ -19,7 +19,7 @@ group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
-  gem 'spring',      '1.1.3'
+  #gem 'spring',      '1.1.3'
 end
 
 group :test do

@@ -10,7 +10,7 @@ def run(email, password)
 end
 
 def login(email, password)
-  @browser = Watir::Browser.new :firefox #:phantomjs
+  @browser = Watir::Browser.new :phantomjs #:firefox 
   @browser.goto(BASE_URL)
   @browser.text_field(name: 'email').set(email)
   @browser.text_field(name: 'pass').set(password)

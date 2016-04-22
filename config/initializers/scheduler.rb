@@ -1,12 +1,14 @@
-require 'rufus-scheduler'
-require 'birthday_wisher.rb'
+#If using Heroku do not use this code, instead us the Heroku scheduler
 
-scheduler = Rufus::Scheduler.new
+#require 'rufus-scheduler'
+#require 'birthday_wisher.rb'
 
-scheduler.cron '5 0 * * *' do
-  Facebook.all.each do |account|
-    run account.email, account.password
-  end
-end
+#scheduler = Rufus::Scheduler.new
 
-scheduler.join
+#scheduler.cron '5 0 * * *' do
+  #Facebook.all.each do |account|
+    #run account.email, account.password
+    #end
+  #end
+
+#scheduler.join
