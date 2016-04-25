@@ -1,5 +1,8 @@
+<%= link_to 'Auto-Mate', home_path%>
+<%= link_to 'about', about_path%>
 <% if logged_in?%>
 	<%= link_to 'Logout', logout_path%>
+	<%= link_to 'profile', profile_path%>
 <%else%>
 	<%= link_to 'Login', login_path%>
 <%end%>

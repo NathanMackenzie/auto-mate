@@ -8,10 +8,10 @@ class SessionsController < ApplicationController
     @user = User.find_by_email(params[:session][:email].downcase)
     
     if @user && @user.authenticate(params[:session][:password])
-      login @user
+      log_in @user
       redirect_to @user
     else
-      render 'login'
+      render 'new'
     end
   end
   
