@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422024703) do
+ActiveRecord::Schema.define(version: 20160426032800) do
 
   create_table "facebooks", force: :cascade do |t|
     t.string   "email"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160422024703) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "remember_digest"
   end
 
 end
