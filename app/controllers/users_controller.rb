@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
+  before_filter :authenticate, only: [:show]
+  
   def show
-    @user = User.find_by(id: params[:id])
+    @user = User.find_by(id: current_user.id)
   end
   
   def new

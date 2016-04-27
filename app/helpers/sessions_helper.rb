@@ -44,4 +44,11 @@ module SessionsHelper
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
+  
+  # Authenticate current user
+  def authenticate
+    if !logged_in?
+      redirect_to login_path
+    end
+  end
 end
