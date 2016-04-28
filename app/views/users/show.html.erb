@@ -1,3 +1,7 @@
 <h1><%= @user.username%></h1>
 
 <%= link_to "New Facebook Account", facebook_signup_path%>
+
+<%@user.facebooks.each do |account|%>
+	<p><%=account.email%></p>
+<%end%>

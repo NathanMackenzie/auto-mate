@@ -15,10 +15,6 @@ class FacebooksController < ApplicationController
     end
   end
   
-  def update
-    
-  end
-  
   private
     def facebook_params
       params.require(:facebook).permit(:email, :account_password, :password_confirmation)
