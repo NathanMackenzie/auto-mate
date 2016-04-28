@@ -1,0 +1,12 @@
+<%= form_for(@facebook) do |f| %>
+	<%= f.label :email%>
+	<%= f.email_field :email%>
+	
+	<%= f.label :account_password%>
+	<%= f.password_field :account_password%>
+	
+	<%= f.label :password_confirmation, "Password confimation"%>
+	<%= f.password_field :password_confirmation%>
+	
+	<%= f.submit "Add Account"%>
+<%end%>
