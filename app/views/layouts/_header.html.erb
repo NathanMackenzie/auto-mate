@@ -1,8 +1,12 @@
-<%= link_to 'Auto-Mate', home_path%>
-<%= link_to 'about', about_path%>
-<% if logged_in?%>
-	<%= link_to 'Logout', logout_path%>
-	<%= link_to 'profile', profile_path%>
-<%else%>
-	<%= link_to 'Login', login_path%>
-<%end%>
+<header>
+	<ul class = "nav_bar">
+		<li><%= active_link_to 'Auto-Mate', home_path, class: "nav_bar_left", id: "logo"%></li>
+		<% if logged_in?%>
+			<li><%= active_link_to 'Logout', logout_path, class: "nav_bar_right"%></li>
+			<li><%= active_link_to 'profile', profile_path, class: "nav_bar_right"%></li>
+		<%else%>
+			<li><%= active_link_to 'Login', login_path, class: "nav_bar_right"%></li>
+		<%end%>
+		<li><%= active_link_to 'about', about_path, class: "nav_bar_right"%></li>
+	</ul>
+</header>

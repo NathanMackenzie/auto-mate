@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',        '4.2.2'
 #gem 'rufus-scheduler', '3.2.0'
+gem 'active_link_to'
 gem 'bcrypt',       '3.1.7'
 gem 'watir-webdriver', '0.9.1'
 gem 'phantom-ruby-browser', '~> 0.1.0'
