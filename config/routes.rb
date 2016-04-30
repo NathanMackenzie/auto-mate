@@ -2,13 +2,13 @@ Rails.application.routes.draw do
   resources :users
   resources :facebooks
   
-  root 'static_pages#home'
+  root 'users#new'
   
-  get 'index' => 'static_pages#home'
-  get 'home' => 'static_pages#home'
+  get 'index' => 'users#new'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   
+  get 'home' => 'users#new'
   get 'signup' => 'users#new'
   get 'profile' => 'users#show'
   

@@ -1,22 +1,35 @@
-<h1>Sign Up</h1>
+<%= stylesheet_link_tag    'users', media: 'all', 'data-turbolinks-track' => true %>
 
-<%= form_for(@user) do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username%>
+<section class="signup">
+	<div class="above-fold-wrapper">
+		<div class="left">
+			<h1>Auto-Mate Scheduled Task Bot</h1>
+			<p>Automate repetitive task such as wishing people 'Happy Birthday!' on Facebook</p>
+		</div>
+		<div class="right">
+			<div class="signup-form">
+				<h1>Sign Up</h1>
+				<%= form_for(@user) do |f| %>
+				    <%= f.label :username %>
+				    <%= f.text_field :username, class: 'form-text-area'%>
 
-    <%= f.label :email %>
-    <%= f.email_field :email%>
+				    <%= f.label :email %>
+				    <%= f.email_field :email, class: 'form-text-area'%>
 
-    <%= f.label :password %>
-    <%= f.password_field :password%>
+				    <%= f.label :password %>
+				    <%= f.password_field :password, class: 'form-text-area'%>
 
-    <%= f.label :password_confirmation, "Confirmation" %>
-    <%= f.password_field :password_confirmation%>
+				    <%= f.label :password_confirmation, "Confirmation" %>
+				    <%= f.password_field :password_confirmation, class: 'form-text-area'%>
 	
-	<%= f.label :remember_me do%>
-		<%= f.check_box :remember_me%>
-		<span>Remember me on this computer</span>
-	<%end%>
+					<%= f.label :remember_me do%>
+						<%= f.check_box :remember_me%>
+						<span>Remember me</span>
+					<%end%>
 
-    <%= f.submit "Create my account"%>
-<% end %>
+				    <%= f.submit "Create my account", class: 'btn'%>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>

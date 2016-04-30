@@ -1,5 +1,13 @@
+header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
 body{
 	margin: 0;
+	margin-top: 40px;
+	background-color: #EDEDED;
 }
 
 /* Header Styling */
@@ -8,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #111;
+    background-color: #666666;
 }
 
 .nav_bar_left {
@@ -32,7 +40,7 @@ body{
 }
 
 .nav_bar .active {
-    color: #4CAF50;	 
+    color: #B0E44F;	 
 }
 
 /* Footer Styling */
