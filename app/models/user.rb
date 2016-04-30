@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessor :remember_me
   attr_accessor :remember_token
   has_many :facebooks, dependent: :destroy
   has_secure_password

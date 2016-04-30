@@ -31,7 +31,8 @@
 .signup-form {
 	font-family: georgia;
 	margin: auto;
-	border-radius: 15px 50px 30px;
+	border-radius: 15px 50px 15px 50px;
+	box-shadow: 10px 17px 113px -6px rgba(0,0,0,0.75);
 	background: #B0E44F;
 	padding: 5px 20px 20px 20px;  
 	width: 200px;
@@ -41,7 +42,7 @@
 .form-text-area {
 	display: block;
 	width: 100%;
-	padding: 4px 20px;
+	padding: 4px 5px;
 	margin: 2px 0;
 	border-radius: 5px 5px 5px;
 	border: none;
@@ -56,7 +57,7 @@
 	border-radius: 5px 5px 5px;
 	color: white;
 	padding: 16px 32px;
-	margin: 4px 20px;
+	margin: 15px 20px;
 }
 
 .btn:hover {
