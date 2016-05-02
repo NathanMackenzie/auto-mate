@@ -4,12 +4,15 @@
 	<div class="above-fold-wrapper">
 		<div class="left">
 			<h1>Auto-Mate Scheduled Task Bot</h1>
-			<p>Automate repetitive task such as wishing people 'Happy Birthday!' on Facebook</p>
+			<p>Automate repetitive task such as wishing people 'Happy Birthday!' through Facebook.</p>
 		</div>
 		<div class="right">
 			<div class="signup-form">
-				<h1>Sign Up</h1>
-				<%= form_for(@user) do |f| %>
+				<h1 id = "signup":>Sign Up</h1>
+				<div class = "error-box">
+					<%= render 'shared/error_messages'%>
+				</div>
+				<%= form_for(@user) do |f| %>					
 				    <%= f.label :username %>
 				    <%= f.text_field :username, class: 'form-text-area'%>
 

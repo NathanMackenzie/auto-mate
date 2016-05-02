@@ -1,7 +1,18 @@
-<h1><%= @user.username%></h1>
+<%= stylesheet_link_tag    'users', media: 'all', 'data-turbolinks-track' => true %>
 
-<%= link_to "New Facebook Account", facebook_signup_path%>
+<article>
+	<section class="wrapper">
+		<h1><%= @user.username%></h1>
 
-<%@user.facebooks.each do |account|%>
-	<p><%=account.email%></p>
-<%end%>
+		<div class="add-bar">
+			<div class="add-btn">
+				<%= link_to "Facebook Wisher", facebook_signup_path%>
+			</div>
+		</div>
+
+		<%@user.facebooks.each do |account|%>
+			<p><%=account.email%></p>
+		<%end%>
+	</section>
+</article>
+

@@ -1,5 +1,28 @@
+article{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.wrapper {
+	margin: auto;
+	width: 80%;
+	min-height: 100vh;
+	background-color: white;
+	box-shadow: 10px 17px 113px -6px rgba(0,0,0,0.75);
+}
+
 .signup {
 	height: 100vh;
+}
+
+.add-bar {
+	margin: auto;
+	height: 40px;
+	padding: 5px 0 5px 0;
+	width: 80%;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+	border-radius: 10px 10px 10px 10px;
+	background-color: #EDEDED;
 }
 
 /* Above Fold Styling */
@@ -8,6 +31,7 @@
 	width: 100%;
 	height: 400px;
 	background-color: #52A028;
+	box-shadow: 10px 17px 113px -6px rgba(0,0,0,0.75);
 }
 
 .left {
@@ -34,9 +58,13 @@
 	border-radius: 15px 50px 15px 50px;
 	box-shadow: 10px 17px 113px -6px rgba(0,0,0,0.75);
 	background: #B0E44F;
-	padding: 5px 20px 20px 20px;  
+	padding: 20px 20px 20px 20px;  
 	width: 200px;
 	height: 310px; 
+}
+
+#signup {
+	margin: 5px 0 0 0;
 }
 
 .form-text-area {
@@ -57,9 +85,29 @@
 	border-radius: 5px 5px 5px;
 	color: white;
 	padding: 16px 32px;
-	margin: 15px 20px;
+	margin: 20px 20px;
 }
 
 .btn:hover {
 	background-color: #52A028;
+}
+
+.add-btn {
+	display: inline-block;
+	margin: 0px 5px 5px 5px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #4862A3;
+	color: white;
+	decoration: none;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+}
+
+/* Messages */
+.error-box {
+	width: 100%;
+	height: 15px;
+	margin: 8px 0 8px 0;
+	color: red;
 }

@@ -1,16 +1,25 @@
-<%= form_for(:session, url: login_path) do |f|%>
-	<%= f.label :email%>
-	<%= f.email_field :email%>
+<%= stylesheet_link_tag    'sessions', media: 'all', 'data-turbolinks-track' => true %>
+
+<section class="login">
+	<div class="wrapper">
+		<div class="login-form">
+			<h1 id="login">Login</h1>
+			<%= form_for(:session, url: login_path) do |f|%>
+				<%= f.label :email%>
+				<%= f.email_field :email, class: "form-text-area"%>
 	
-	<%= f.label :password%>
-	<%= f.password_field :password%>
+				<%= f.label :password%>
+				<%= f.password_field :password, class: "form-text-area"%>
 	
-	<%= f.label :remember_me do%>
-		<%= f.check_box :remember_me%>
-		<span>Remember me on this computer</span>
-	<%end%>
+				<%= f.label :remember_me do%>
+					<%= f.check_box :remember_me%>
+					<span>Remember me</span>
+				<%end%>
 	
-	<%= f.submit 'Login'%>
-	<br>
-	<%= link_to 'Sign up', signup_path%>
-<%end%>
+				<%= f.submit 'Login', class: "btn"%>
+				<br>
+				<%= link_to 'Sign up', signup_path, class: "link"%>
+			<%end%>
+		</div>
+	</div>
+</section>

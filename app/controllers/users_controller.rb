@@ -1,6 +1,16 @@
 class UsersController < ApplicationController
   before_filter :authenticate, only: [:show]
   
+  def index
+    if logged_in?
+      @user = User.find_by(id: current_user.id)
+      render 'show'
+    else
+      @user = User.new
+      render 'new'
+    end
+  end
+  
   def show
     @user = User.find_by(id: current_user.id)
   end
