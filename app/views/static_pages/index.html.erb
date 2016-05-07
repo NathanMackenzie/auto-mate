@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag    'static_pages', media: 'all', 'data-turbolinks-track' => true %>
+
+
+<section class="container hero">
+	<h2>Auto-Mate Scheduled Task Bot</h2>
+	<p>Automate repetitive daily task such as wishing friends 'Happy Birthday!' through Facebook.</p>
+	<%= link_to 'Signup!', signup_path, class: "btn btn-alt"%>
+</section>
+<section class="row">
+	<div class="container column">
+		<h3>Birthday Wisher</h3>
+		<%= image_tag("facebook.jpg", width: '250', height: '250', alt: 'Facebook Logo', class: 'facebook')%>
+		<h4><%= link_to 'Automated Birthday Wisher', facebook_signup_path%></h4>
+		<p>Simply add your Facebook login and Auto-Mate will wish any friends 'Happy Birthday!' every day.</p>
+	</div>
+</section>

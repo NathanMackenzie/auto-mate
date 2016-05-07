@@ -1,17 +1,131 @@
-.home, .contact, .about {
-	height: 100vh;
+/*
+  ========================================
+  Custom Styles
+  ========================================
+*/
+.hero {
+	padding: 100px 0 100px 0;
+	text-align: center;
+	letter-spacing: .5px;
+	font-weight: 200;
+	color: #fff;
 }
 
-.wrapper {
-	padding-top: 50px;
+.row {
 	width: 100%;
-	height: 400px;
-	background-color: #52A028;
-	box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.75);
+	height: 480px;
+	background-color: #fff;
 }
 
-.text-box {
-	color: white;
-	font-family: georgia;
-	margin-left: 50px;
+.column {
+	height: 100%;
+	width: 370px;
+	padding-top: 30px;
+	margin: 0 1.5% 0 1.5%;
+	margin: auto;
+}
+
+.facebook {
+	display: block;
+	margin: auto;
+}
+
+.banner {
+	padding-top: 75px;
+	height: 300px;
+	background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+	background-image: linear-gradient(to right, rgb(161, 211, 176), rgb(246, 241, 211));
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+.banner h1, .banner p {
+	text-align: center;
+}
+
+.banner h1 {
+	font-size: 36px;
+	color: #648880;
+	letter-spacing: .5px;
+	line-height: 44px;
+	margin-top: 30px;
+}
+
+h2 {
+	display: block;
+	line-height: 48px;
+	color: #648880;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+p {
+    display: block;
+    
+}
+
+.hero h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
+	margin-bottom: 50px;
+	line-height: 175%;
+}
+
+.column h3 {
+	display: block;
+	margin: 0px 0 10px 35px;
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h4 a {
+	color: #648880;
+}
+
+h4 a:hover {
+	color: #a9b2b9;
+}
+
+.column h4 {
+	margin: 22px 0 22px 35px;
+	font-size: 21px;
+}
+
+.column p {
+	margin: 0 35px 0 35px;
+}
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn {
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	margin: 0;
+	text-transform: uppercase;
+}
+.btn-alt {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+.btn:hover {
+	background-color: white;
 }

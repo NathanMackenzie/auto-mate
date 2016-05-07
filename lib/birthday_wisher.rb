@@ -1,16 +1,17 @@
 require 'watir-webdriver'
 require 'phantomjs'
 
-BASE_URL = "http://facebook.com"
+BASE_URL = "http://facebook.com/events/birthdays"
 
 def run(email, password)
   login(email, password)
   wish_happy_birthdays get_birthdays
+  sleep(3) #Ensures enough time for browser to send post before exiting
   close
 end
 
 def login(email, password)
-  @browser = Watir::Browser.new :phantomjs #:firefox 
+  @browser = Watir::Browser.new :phantomjs  #:firefox
   @browser.goto(BASE_URL)
   @browser.text_field(name: 'email').set(email)
   @browser.text_field(name: 'pass').set(password)
@@ -18,7 +19,6 @@ def login(email, password)
 end
   
 def get_birthdays
-  @browser.goto(BASE_URL+'/events/birthdays')
   birthdays = @browser.textareas
   return birthdays
 end
